@@ -102,10 +102,10 @@
             margin-top: 10px;
         }
 
-        /* Projects Section */
+        /* Section Title */
         .section-title {
             font-size: 28px;
-            margin-bottom: 30px;
+            margin: 40px 0 30px 0;
             text-align: center;
             position: relative;
             padding-bottom: 15px;
@@ -122,11 +122,19 @@
             background: #ff6b35;
         }
 
+        .sub-section-title {
+            font-size: 22px;
+            margin: 30px 0 20px 0;
+            text-align: center;
+            color: #ffa500;
+        }
+
+        /* Projects Grid */
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 25px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .project-card {
@@ -248,7 +256,7 @@
             <div>
                 <span class="badge">🔥 Auto ML Expert</span>
                 <span class="badge">🏆 Top 1% Kaggle Level</span>
-                <span class="badge">🚀 4+ Datasets Mastered</span>
+                <span class="badge">🚀 6+ Datasets Mastered</span>
             </div>
         </div>
 
@@ -259,42 +267,43 @@
                 <div class="stat-label">Iris Dataset Accuracy</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">94.33%</div>
+                <div class="stat-number">97.5%</div>
                 <div class="stat-label">California Housing</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">93.36%</div>
+                <div class="stat-number">94.18%</div>
                 <div class="stat-label">Titanic AUC</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">92.6%</div>
+                <div class="stat-number">97.84%</div>
                 <div class="stat-label">Wine Quality AUC</div>
             </div>
         </div>
 
-        <!-- Projects -->
-        <h2 class="section-title">🏆 Featured Projects</h2>
+        <!-- SUPERVISED LEARNING PROJECTS -->
+        <h2 class="section-title">📊 Supervised Learning Projects</h2>
         <div class="projects">
             <div class="project-card">
                 <div class="project-title">🚢 Titanic Survival Predictor</div>
-                <p>Auto ML model untuk memprediksi survival rate penumpang Titanic. AI melakukan auto feature engineering dan hyperparameter tuning.</p>
+                <p>Auto ML model untuk memprediksi survival rate penumpang Titanic. AI melakukan auto feature engineering dan hyperparameter tuning dengan hasil top-tier.</p>
                 <div class="project-metrics">
-                    <div class="metric">📈 Accuracy: <span class="metric-value">89.94%</span></div>
-                    <div class="metric">📊 AUC: <span class="metric-value">93.36%</span></div>
+                    <div class="metric">📈 Accuracy: <span class="metric-value">90.50%</span></div>
+                    <div class="metric">📊 AUC: <span class="metric-value">94.18%</span></div>
                 </div>
                 <div class="tech-stack">
                     <span class="tech">Random Forest</span>
                     <span class="tech">XGBoost</span>
                     <span class="tech">SMOTE</span>
+                    <span class="tech">Hyperparameter Tuning</span>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-title">🍷 Wine Quality Classifier</div>
-                <p>Prediksi kualitas wine (Good vs Bad) dengan akurasi tinggi. Model mengalahkan benchmark paper penelitian.</p>
+                <p>Prediksi kualitas wine (Good vs Bad) dengan akurasi tinggi. Model mengalahkan benchmark paper penelitian dengan AUC 97.84%.</p>
                 <div class="project-metrics">
-                    <div class="metric">📈 Accuracy: <span class="metric-value">87.5%</span></div>
-                    <div class="metric">📊 AUC: <span class="metric-value">92.6%</span></div>
+                    <div class="metric">📈 Accuracy: <span class="metric-value">91.67%</span></div>
+                    <div class="metric">📊 AUC: <span class="metric-value">97.84%</span></div>
                 </div>
                 <div class="tech-stack">
                     <span class="tech">Random Forest</span>
@@ -304,22 +313,22 @@
             </div>
 
             <div class="project-card">
-                <div class="project-title">🏠 California Housing Price</div>
-                <p>Prediksi harga rumah di California dengan akurasi 94.33%. Model Gradient Boosting mencapai AUC 98.99%.</p>
+                <div class="project-title">🏠 California Housing Location</div>
+                <p>Prediksi ocean_proximity (lokasi rumah) dengan akurasi 97.5% dan AUC 99.78%. Model Random Forest dengan tuning optimal.</p>
                 <div class="project-metrics">
-                    <div class="metric">📈 Accuracy: <span class="metric-value">94.33%</span></div>
-                    <div class="metric">📊 AUC: <span class="metric-value">98.99%</span></div>
+                    <div class="metric">📈 Accuracy: <span class="metric-value">97.50%</span></div>
+                    <div class="metric">📊 AUC: <span class="metric-value">99.78%</span></div>
                 </div>
                 <div class="tech-stack">
-                    <span class="tech">Gradient Boosting</span>
-                    <span class="tech">Regression</span>
+                    <span class="tech">Random Forest</span>
+                    <span class="tech">Classification</span>
                     <span class="tech">Feature Engineering</span>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-title">🌸 Iris Flower Classification</div>
-                <p>Klasifikasi 3 spesies bunga Iris dengan akurasi sempurna 100%. Model Random Forest dengan tuning optimal.</p>
+                <p>Klasifikasi 3 spesies bunga Iris dengan akurasi sempurna 100% dan AUC 100%. Model Random Forest dengan tuning optimal.</p>
                 <div class="project-metrics">
                     <div class="metric">📈 Accuracy: <span class="metric-value">100%</span></div>
                     <div class="metric">📊 AUC: <span class="metric-value">100%</span></div>
@@ -328,6 +337,70 @@
                     <span class="tech">Random Forest</span>
                     <span class="tech">Multiclass</span>
                     <span class="tech">Perfect Classification</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNSUPERVISED LEARNING PROJECTS -->
+        <h2 class="section-title">🎯 Unsupervised Learning Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-title">🌸 Iris Clustering</div>
+                <p>Clustering bunga Iris tanpa label menggunakan KMeans. Berhasil mengelompokkan data dengan Silhouette Score 0.58 (Good clustering).</p>
+                <div class="project-metrics">
+                    <div class="metric">🎯 Method: <span class="metric-value">KMeans</span></div>
+                    <div class="metric">📊 Clusters: <span class="metric-value">2</span></div>
+                    <div class="metric">✨ Silhouette: <span class="metric-value">0.5788</span></div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">KMeans</span>
+                    <span class="tech">PCA</span>
+                    <span class="tech">Silhouette Analysis</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">🍷 Wine Clustering</div>
+                <p>Clustering 3 jenis wine berdasarkan karakteristik kimia. Silhouette Score 0.30 menunjukkan decent clustering dengan pemisahan cukup baik.</p>
+                <div class="project-metrics">
+                    <div class="metric">🎯 Method: <span class="metric-value">KMeans</span></div>
+                    <div class="metric">📊 Clusters: <span class="metric-value">3</span></div>
+                    <div class="metric">✨ Silhouette: <span class="metric-value">0.3053</span></div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">KMeans</span>
+                    <span class="tech">PCA</span>
+                    <span class="tech">Feature Scaling</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">🌍 Countries Clustering</div>
+                <p>Segmentasi negara berdasarkan GDP, life expectancy, dan populasi. Menghasilkan 7 cluster dengan interpretasi yang jelas.</p>
+                <div class="project-metrics">
+                    <div class="metric">🎯 Method: <span class="metric-value">KMeans</span></div>
+                    <div class="metric">📊 Clusters: <span class="metric-value">7</span></div>
+                    <div class="metric">✨ Silhouette: <span class="metric-value">0.3816</span></div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">KMeans</span>
+                    <span class="tech">Log Transform</span>
+                    <span class="tech">PCA Visualization</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">🛍️ Mall Customer Segmentation</div>
+                <p>Segmentasi pelanggan berdasarkan pendapatan dan skor belanja. Identifikasi 4-6 cluster pelanggan untuk target marketing.</p>
+                <div class="project-metrics">
+                    <div class="metric">🎯 Method: <span class="metric-value">KMeans</span></div>
+                    <div class="metric">📊 Clusters: <span class="metric-value">5</span></div>
+                    <div class="metric">✨ Silhouette: <span class="metric-value">0.45-0.55</span></div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech">KMeans</span>
+                    <span class="tech">Elbow Method</span>
+                    <span class="tech">Customer Analytics</span>
                 </div>
             </div>
         </div>
@@ -345,6 +418,9 @@
             <span class="skill">SMOTE</span>
             <span class="skill">RandomizedSearchCV</span>
             <span class="skill">Feature Engineering</span>
+            <span class="skill">KMeans</span>
+            <span class="skill">PCA</span>
+            <span class="skill">DBSCAN</span>
         </div>
 
         <!-- What I Built -->
@@ -358,6 +434,7 @@
                     <li>✅ Auto model selection & hyperparameter tuning</li>
                     <li>✅ Auto handling missing values & class imbalance (SMOTE)</li>
                     <li>✅ Auto target detection & problem type classification</li>
+                    <li>✅ Unsupervised Learning (Clustering: KMeans, DBSCAN, Hierarchical)</li>
                     <li>✅ Interactive dashboard dengan PyQt5</li>
                 </ul>
                 <div class="tech-stack" style="margin-top: 15px;">
@@ -365,21 +442,23 @@
                     <span class="tech">Scikit-learn</span>
                     <span class="tech">XGBoost</span>
                     <span class="tech">Imbalanced-learn</span>
+                    <span class="tech">KMeans</span>
+                    <span class="tech">PCA</span>
                 </div>
             </div>
         </div>
 
         <!-- Contact -->
-<div class="contact">
-    <h3 style="margin-bottom: 20px;">📫 Ready for Opportunities</h3>
-    <p style="margin-bottom: 25px;">Looking for freelance projects or full-time position as ML Engineer / Auto ML Developer</p>
-    <a href="mailto:cpt.zero04@gmail.com?subject=Freelance%20Project%20Inquiry&body=Hi%20Rafliansyah%2C%0A%0AI%20saw%20your%20portfolio%20and%20I'm%20interested%20in%20working%20with%20you.%0A%0ABest%20regards" class="btn" target="_blank">📧 Contact Me</a>
-    <a href="https://www.linkedin.com/in/rafliansyah-surya-diningrat-79a769319" class="btn btn-outline" target="_blank">🔗 LinkedIn</a>
-</div>
+        <div class="contact">
+            <h3 style="margin-bottom: 20px;">📫 Ready for Opportunities</h3>
+            <p style="margin-bottom: 25px;">Looking for freelance projects or full-time position as ML Engineer / Auto ML Developer</p>
+            <a href="mailto:cpt.zero04@gmail.com?subject=Freelance%20Project%20Inquiry&body=Hi%20Rafliansyah%2C%0A%0AI%20saw%20your%20portfolio%20and%20I'm%20interested%20in%20working%20with%20you.%0A%0ABest%20regards" class="btn" target="_blank">📧 Contact Me</a>
+            <a href="https://www.linkedin.com/in/rafliansyah-surya-diningrat-79a769319" class="btn btn-outline" target="_blank">🔗 LinkedIn</a>
+        </div>
 
         <div class="footer">
             <p>🤖 Auto ML Engineer | Building AI that Builds AI</p>
-            <p style="margin-top: 10px;">© 2024 | Available for freelance & collaboration</p>
+            <p style="margin-top: 10px;">© 2025 | Available for freelance & collaboration</p>
         </div>
     </div>
 </body>
